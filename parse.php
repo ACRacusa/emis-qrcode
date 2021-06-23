@@ -31,7 +31,11 @@
             $temp = array();
             for($j = 0 ; $j<sizeof($details[0]) ; $j++)
             {
-                $temp[$details[0][$j]] = $details[$i][$j];
+                if($details[0][$j] == "ASSESSMENT"){
+                    $temp[$details[0][$j]] = number_format($details[$i][$j], 2,'.', ',');
+                }else{
+                    $temp[$details[0][$j]] = $details[$i][$j];
+                }
             }
             array_push($finalArray,$temp);
         }
@@ -51,7 +55,7 @@
         $path = 'qrcodes/';
         $file = $path.$data['BUSINESS_NAME'].".png";
         // printData($data['BUSINESS_NAME']);
-        $text = "Account Number: ".$data['BPLO_ACCOUNT_NUMBER']."\n"."Issuance: ".$data['ISSUANCE']."\n"."Expiry: ".$data['EXPIRY'];
+        $text = "Account Number: ".$data['BPLO_ACCOUNT_NUMBER']."-".$data['CENRO_CODE']."\n"."Certificate Number: ".$data['CERTIFICATE_NUMBER']."\n"."Issuance: ".$data['ISSUANCE']."\n"."Expiry: ".$data['EXPIRY']."\n"."OR Number: ".$data['OR_NUMBER']."\n"."Assessment: P ".$data['ASSESSMENT'];
 
         // $ecc stores error correction capability('L')
         $ecc = 'L';
