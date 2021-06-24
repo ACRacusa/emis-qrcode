@@ -53,7 +53,7 @@
     {
         
         $path = 'qrcodes/';
-        $file = $path.$data['BUSINESS_NAME'].".png";
+        $file = $path.$data['BUSINESS_NAME']."-".$data['BPLO_ACCOUNT_NUMBER'].".png";
         // printData($data['BUSINESS_NAME']);
         $text = "Account Number: ".$data['BPLO_ACCOUNT_NUMBER']."-".$data['CENRO_CODE']."\n"."Certificate Number: ".$data['CERTIFICATE_NUMBER']."\n"."Issuance: ".$data['ISSUANCE']."\n"."Expiry: ".$data['EXPIRY']."\n"."OR Number: ".$data['OR_NUMBER']."\n"."Assessment: P ".$data['ASSESSMENT'];
 
