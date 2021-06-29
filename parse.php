@@ -4,7 +4,7 @@
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 <?php error_reporting (E_ALL ^ E_NOTICE); ?>
 <?php
-    include('./phpqrcode/qrlib.php');
+    include('./lib/qrlib.php');
     function readCsvFile($filename)
     {
         if ( $file = fopen( "upload/" . $filename , 'r' ) ) {

@@ -1,0 +1,188 @@
+/* CSS */
+
+@font-face{
+  font-family: "Raleway";
+src:  url("fonts/raleway-extrabold-webfont.woff") format("woff");
+}
+
+@font-face{
+  font-family: "Nunito";
+src:  url("fonts/nunitobold-1gd50-webfont.woff") format("woff");
+}
+
+.container{
+	position: relative;
+	/*background-image: url('././img/cert.jpg');*/
+	background-repeat: no-repeat;
+	height: 800px;
+  width: 50%;	
+  background-size: cover;
+	}
+
+.text1{
+  font-family:"Nunito";
+  color: #126953;
+  border-style: none;
+	position: absolute;
+  top: 26px;
+  left: 535px;
+  width: 50px;
+  height: 20px;
+}
+
+.text2{
+  font-family:"Raleway";
+  color: #126953;
+  resize: none;
+  background-color: transparent;
+  text-align: center;
+  border-style: none;
+	position: absolute;
+	font-size: 35px;
+  line-height: 1.0;
+  top: 340px;
+  left:-10px;
+  width: 630px;
+  height: 83px;
+}
+
+.text3{
+  font-family:"Nunito";
+  color: #126953;
+  background-color: transparent;
+  border-style: none;
+	position: absolute;
+ 	top: 428px;
+  left:138px;
+  width: 437px;
+  height: 23px;
+}
+.text4{
+  font-family:"Nunito";
+  color: #126953;
+  background-color: transparent;
+  border-style: none;
+	position: absolute;
+ 	top: 470px;
+  left:310px;
+  width: 200px;
+  height: 23px;
+}
+
+/* upload]
+----------------------------------------------- */
+.file-upload {
+  background-color: #ffffff;
+  width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.file-upload-btn {
+  width: 100%;
+  margin: 0;
+  color: #fff;
+  background: #1FB264;
+  border: none;
+  padding: 10px;
+  border-radius: 4px;
+  border-bottom: 4px solid #15824B;
+  transition: all .2s ease;
+  outline: none;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.file-upload-btn:hover {
+  background: #1AA059;
+  color: #ffffff;
+  transition: all .2s ease;
+  cursor: pointer;
+}
+
+.file-upload-btn:active {
+  border: 0;
+  transition: all .2s ease;
+}
+
+.file-upload-content {
+  display: none;
+  text-align: center;
+}
+
+.file-upload-input {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  outline: none;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.image-upload-wrap {
+  margin-top: 20px;
+  border:3px solid #126953;
+  position: absolute;
+  width: 83px;
+  height: 80px;
+  left: 495px;
+  top: 27px;
+}
+
+.image-dropping,
+.image-upload-wrap:hover {
+  background-color: #126953;
+  border: 3px solid #ffffff;
+}
+
+.image-title-wrap {
+  padding: 0 15px 15px 15px;
+  color: #222;
+}
+
+.drag-text {
+  text-align: center;
+}
+
+.drag-text h5 {
+  font-weight: 100;
+  text-transform: uppercase;
+  color: white;
+  padding-top: 10px;
+}
+
+.file-upload-image {
+  max-height: 100px;
+  max-width: 100px;
+  margin: auto;
+  padding: 20px;
+}
+
+.remove-image {
+  width: 200px;
+  margin: 0;
+  color: #fff;
+  background: #cd4535;
+  border: none;
+  padding: 10px;
+  border-radius: 4px;
+  border-bottom: 4px solid #b02818;
+  transition: all .2s ease;
+  outline: none;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.remove-image:hover {
+  background: #c13b2a;
+  color: #ffffff;
+  transition: all .2s ease;
+  cursor: pointer;
+}
+
+.remove-image:active {
+  border: 0;
+  transition: all .2s ease;
+}

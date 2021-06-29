@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CENRO CERTIFICATE OF PARTICIPATION</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="font-awesome/css/font-awesome.css" rel="stylesheet">
+    <link href="css/plugins/iCheck/custom.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script type="text/javascript" src="c2b87da8-d4b5-11eb-a980-0cc47a792c0a_id_c2b87da8-d4b5-11eb-a980-0cc47a792c0a_files/wz_jsgraphics.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div style="position:absolute;left:50%;margin-left:-306px;top:0px;width:612px;height:792px;border-style:outset;overflow:hidden">
+        <div style="position:absolute;left:0px;top:0px">
+        <img src="img/background_cert.gif" width=612 height=792></div>
+        <div style="position:absolute;left:447.14px;top:26.38px" class="cls_003"></div><input type="text" class="text1" aria-label="Default" placeholder="Cert#"><
+ 
+        <div class="image-upload-wrap">
+            <input class="file-upload-input" type='file' onchange="readURL(this);" accept="image/*" />
+            <div class="drag-text">
+            <h5>ADD<br>QRCODE</h5>
+            </div>
+        </div>
+        <div class="file-upload-content">
+         <img class="file-upload-image" src="#" alt="your image" />
+            <div class="image-title-wrap">
+            <button type="button" onclick="removeUpload()" class="remove-image">Remove <span class="image-title">Uploaded Image</span></button>
+            </div>
+                </div>
+
+
+    <textarea type="text" class="text2" aria-label="Default" placeholder="ENTER BUSINESS NAME" rows="2" cols="50"></textarea>
+    <input type="text" class="text3" aria-label="Default" placeholder="ENTER BUSINESS ADDRESS">
+    <input type="text" class="text4" aria-label="Default" placeholder="ENTER DATE OF SEMINAR">
+</div>
+    </div>
+    <!-- Mainly scripts -->
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+     <script>
+   function readURL(input) {
+  if (input.files && input.files[0]) {
+
+    var reader = new FileReader();
+
+    reader.onload = function(e) {
+      $('.image-upload-wrap').hide();
+
+      $('.file-upload-image').attr('src', e.target.result);
+      $('.file-upload-content').show();
+
+      $('.image-title').html(input.files[0].name);
+    };
+
+    reader.readAsDataURL(input.files[0]);
+
+  } else {
+    removeUpload();
+  }
+}
+
+function removeUpload() {
+  $('.file-upload-input').replaceWith($('.file-upload-input').clone());
+  $('.file-upload-content').hide();
+  $('.image-upload-wrap').show();
+}
+$('.image-upload-wrap').bind('dragover', function () {
+    $('.image-upload-wrap').addClass('image-dropping');
+  });
+  $('.image-upload-wrap').bind('dragleave', function () {
+    $('.image-upload-wrap').removeClass('image-dropping');
+});
+  </script>
+</body>
+</html>
+
